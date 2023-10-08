@@ -1,0 +1,60 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/dotnet
+{
+	"name": "MyProject",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/dotnet:0-7.0",
+	"features": {
+		"ghcr.io/devcontainers/features/git:1": {},
+		"ghcr.io/devcontainers/features/node:1": {},
+		"ghcr.io/devcontainers/features/powershell:1": {}
+	},
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [5040, 5041],
+	"portsAttributes": {
+			"5041": {
+				"protocol": "https"
+			}
+	},
+	"containerEnv": {
+		// uncomment the below two lines once you have certificate
+		// "ASPNETCORE_Kestrel__Certificates__Default__Password": "crypticpassword",
+		// "ASPNETCORE_Kestrel__Certificates__Default__Path": "/home/vscode/.aspnet/https/aspnetapp.pfx",
+		"ASPNETCORE_ENVIRONMENT":"Development",
+		//Use the following line instead once you have certificate
+		//"ASPNETCORE_URLS":"https://+:8001;http://+:8000",
+
+		"ASPNETCORE_URLS":"http://+:5040"
+	},
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "ls",
+
+	// Configure tool-specific properties.
+	 "customizations": {
+		"vscode": {	
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"ms-dotnettools.csharp",
+				"ionide.ionide-fsharp",
+				"ionide.mechanic",
+				"alfonsogarciacaro.vscode-template-fsharp-highlight",
+				"alexkrechik.cucumberautocomplete",
+				"bierner.lit-html",
+				"ionide.ionide-paket",
+				"ionide.ionide-fake",
+				"BRBoer.vsc-conceal",
+				"fernandoescolar.vscode-solution-explorer",
+				"github.copilot",
+				"github.copilot-labs"
+			]
+		}
+	 },
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
