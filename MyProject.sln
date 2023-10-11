@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AE21FBBD-194
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Server", "src\Server\Server.fsproj", "{F103E800-9266-47C6-B8A9-70F2538F13D7}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "build", "build\build.fsproj", "{C7A4FE93-3A01-4838-9222-14F1065D2838}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{F103E800-9266-47C6-B8A9-70F2538F13D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F103E800-9266-47C6-B8A9-70F2538F13D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F103E800-9266-47C6-B8A9-70F2538F13D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7A4FE93-3A01-4838-9222-14F1065D2838}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7A4FE93-3A01-4838-9222-14F1065D2838}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7A4FE93-3A01-4838-9222-14F1065D2838}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7A4FE93-3A01-4838-9222-14F1065D2838}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F103E800-9266-47C6-B8A9-70F2538F13D7} = {AE21FBBD-194A-45E7-8313-FB62A06C8673}

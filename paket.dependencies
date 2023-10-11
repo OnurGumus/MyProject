@@ -1,0 +1,14 @@
+source https://api.nuget.org/v3/index.json
+
+storage: none
+framework: auto-detect
+nuget FSharp.Core
+
+group Build
+source https://api.nuget.org/v3/index.json
+storage: none
+framework: auto-detect
+
+nuget FSharp.Core
+nuget Fake.Core.Target
+nuget Fake.DotNet.Cli
